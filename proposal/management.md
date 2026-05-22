@@ -7,35 +7,44 @@
 - Strengths
     - Mechanical experience
     - Aero experience
-- Weaknesses
-    - points
 - Roles
-    - points
+    - Lead communicator with Benard in Kenya
+    - Mechanical Design
 - Skills Required
-    - points
+    - 3D printing
+    - Metal working (bending, fixing, perhaps welding)
 
 ### Zac
 
 - Strengths
     - Electrical experience
-- Weaknesses
-    - points
 - Roles
-    - points
+    - Electronics Lead
 - Skills Required
-    - points
+    - Circuit design (LTspice)
+    - Circuit construction (soldering, insulating, wire stripping and crimping)
 
 ### James
 
 - Strengths
     - Mechanical experience
     - Aero experience
-- Weaknesses
-    - points
 - Roles
-    - points
+    - Project Lead
+    - Mechanical Design
 - Skills Required
-    - points
+    - 3D printing
+    - Metal working (bending, fixing, perhaps welding)
+    - Planning and management
+
+### General Team
+
+- Strengths
+    - Strong experience in industry
+
+- Weaknesses
+    - Perfectionists
+    - We all try to create the most performant or optimal design immediately, rather than attempt incremental improvement
 
 ## Development Timeline
 
@@ -53,17 +62,21 @@
 ## Cost Estimates
 
 - Test motor
-    - £10
+    - ~£10
 - Test fan of equivalent size
-    - £1 if printed
+    - ~£5 if printed
 - Fan ducting
-    - ~£2 printed
+    - ~£5 printed
 - Control elements
+    - ~£5
 - Sensing elements
+    - ~£5
 - Heating elements
+    - ~£10
 - Thermal battery
+    - ~£40
 - Exchange fins
-    - £2 aluminium material
+    - ~£2 aluminium material
 
 
 ## Risk Assessment
