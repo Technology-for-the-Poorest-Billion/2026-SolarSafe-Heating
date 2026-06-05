@@ -1,13 +1,13 @@
 ---
-title: Landing page of the website
+title: Welcome
 ---
 
 ## Introduction
 
-This is an introduction.
-
-
-
+In Kenya, and other Sub-Saharan countries, the maize harvest is often blighted by aflatoxin contracted from a fungus that resides in the soil and grows upon the grains if left unchecked.
+This poses significant health and financial issues upon the subsitance an co-operative farmers who rely on the maize harvest for their lives and livelihoods.
+The traditional methods of drying the grain are not satisfactory for protecting the grains from the toxin and they do not meet the requirements set out by global health organisations, so this leaves the maize as potentially harmful to consume and low-value if sold.
+A method of increasing the speed and effectiveness of the drying process, while also avoiding contact with contaminated soil, would greatly improve the quality and safety of the maize.
 
 ### To configure your website:
 
