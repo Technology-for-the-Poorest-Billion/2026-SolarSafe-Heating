@@ -9,6 +9,19 @@ This poses significant health and financial issues upon the subsitance an co-ope
 The traditional methods of drying the grain are not satisfactory for protecting the grains from the toxin and they do not meet the requirements set out by global health organisations, so this leaves the maize as potentially harmful to consume and low-value if sold.
 A method of increasing the speed and effectiveness of the drying process, while also avoiding contact with contaminated soil, would greatly improve the quality and safety of the maize.
 
+## The SOLARSAFE Prototype
+
+The SOLARSAFE device at Taita Taveta University aims to address issues with the preparation and storage of maize for prevention of aflatoxin contamination by inflating a plastic bag within which the grain is held.
+The bag is designed to provide passive heating through the greenhouse effect, and a fan provides a steady flow of air over the maize to draw moisture out of the crop.
+A core feature of this setup is its solar panel providing 150W of power to a 12V car battery.
+
+## Our Contribution
+
+The current prototype in Kenya only features passive heating of the air.
+Initially, our goal was to provide modifications to the blower element of the prototype to inject extra heat for greater drying ability.
+A review of literature lead to the alteration of this aim to reduce the relative humidity of the air being blown into the bag by any means, not just by heating.
+Our intention was to experiment with providing power to various different devices and measure their contribution to reducing the relative humidity of the air so that we would suggest devices which could provide the greatest benefit from the limited power available.
+
 ### To configure your website:
 
 - The required files to run a basic website are included in the repository. We use here Jekyll to turn markdown files into html that will be automatically updated on the website. The component responsible for this is a GitHub action, which is specified in the folder .github/workflows. There is no need to change this file. However:
