@@ -1,0 +1,156 @@
+/*
+ * SOLARSAFE prototype — fan (BTS7960) + dual DHT11
+ * Board: Arduino Nano Every
+ * Fan: RPWM=D5, LPWM=D6, R_EN=D7, L_EN=D8 (or tie EN pins to 5V)
+ * DHT11: inlet=D2, outlet=D4
+ *
+ * Serial: 115200 baud
+ * Commands: 0 OFF, 1 LOW(25%), 2 MED(50%), 3 HIGH(75%), 4 MAX(100%)
+ *           + / - step speed by 10%
+ */
+
+#include <DFRobot_DHT11.h>
+
+// --- Pins ---
+const uint8_t PIN_FAN_RPWM = 5;
+const uint8_t PIN_FAN_LPWM = 6;
+const uint8_t PIN_FAN_REN  = 7;   // optional: wire R_EN/L_EN straight to 5V instead
+const uint8_t PIN_FAN_LEN  = 8;
+const uint8_t PIN_DHT_INLET  = 2;
+const uint8_t PIN_DHT_OUTLET = 4;
+
+// --- Fan ---
+uint8_t fanPercent = 0;  // 0–100
+
+// DFRobot library: one object, pass pin to read()
+DFRobot_DHT11 dht;
+
+// --- Fan helpers ---
+void fanEnable(bool on) {
+#if defined(PIN_FAN_REN) && defined(PIN_FAN_LEN)
+  digitalWrite(PIN_FAN_REN, on ? HIGH : LOW);
+  digitalWrite(PIN_FAN_LEN, on ? HIGH : LOW);
+#else
+  (void)on;
+#endif
+}
+
+void fanSetPercent(uint8_t percent) {
+  percent = constrain(percent, 0, 100);
+  fanPercent = percent;
+
+  if (percent == 0) {
+    analogWrite(PIN_FAN_RPWM, 0);
+    analogWrite(PIN_FAN_LPWM, 0);
+    fanEnable(false);
+    return;
+  }
+
+  fanEnable(true);
+  analogWrite(PIN_FAN_LPWM, 0);  // forward only
+
+  // Kick-start if starting from low duty (brushed motor stall)
+  if (percent < 40) {
+    analogWrite(PIN_FAN_RPWM, 255);
+    delay(400);
+  }
+
+  uint8_t duty = map(percent, 0, 100, 0, 255);
+  analogWrite(PIN_FAN_RPWM, duty);
+}
+
+// --- DHT helpers ---
+bool readDht(uint8_t pin, float &tempC, float &rhPct) {
+  int err = 0;
+  dht.read(pin);
+  if (err != 0) {
+    return false;
+  }
+  tempC = dht.temperature;
+  rhPct = dht.humidity;
+  return true;
+}
+
+void printSensor(const char *label, uint8_t pin) {
+  float t, h;
+  if (readDht(pin, t, h)) {
+    Serial.print(label);
+    Serial.print("  T=");
+    Serial.print(t, 1);
+    Serial.print(" C  RH=");
+    Serial.print(h, 1);
+    Serial.println(" %");
+  } else {
+    Serial.print(label);
+    Serial.print("  READ ERROR (pin ");
+    Serial.print(pin);
+    Serial.println(")");
+  }
+}
+
+void handleSerialCommand() {
+  if (!Serial.available()) {
+    return;
+  }
+  char c = Serial.read();
+  switch (c) {
+    case '0': fanSetPercent(0);   Serial.println(F("Fan OFF")); break;
+    case '1': fanSetPercent(25);  Serial.println(F("Fan LOW 25%")); break;
+    case '2': fanSetPercent(50);  Serial.println(F("Fan MED 50%")); break;
+    case '3': fanSetPercent(75);  Serial.println(F("Fan HIGH 75%")); break;
+    case '4': fanSetPercent(85); Serial.println(F("Fan MAX 85%")); break;
+    case '+':
+      fanSetPercent(constrain(fanPercent + 10, 0, 100));
+      Serial.print(F("Fan "));
+      Serial.print(fanPercent);
+      Serial.println(F("%"));
+      break;
+    case '-':
+      fanSetPercent(constrain(fanPercent - 10, 0, 100));
+      Serial.print(F("Fan "));
+      Serial.print(fanPercent);
+      Serial.println(F("%"));
+      break;
+    case '?':
+      Serial.println(F("Commands: 0 OFF, 1-4 presets, + - step 10%"));
+      break;
+    default:
+      break;
+  }
+}
+
+void setup() {
+  pinMode(PIN_FAN_RPWM, OUTPUT);
+  pinMode(PIN_FAN_LPWM, OUTPUT);
+  pinMode(PIN_FAN_REN, OUTPUT);
+  pinMode(PIN_FAN_LEN, OUTPUT);
+
+  analogWrite(PIN_FAN_RPWM, 0);
+  analogWrite(PIN_FAN_LPWM, 0);
+  fanEnable(false);
+
+  Serial.begin(115200);
+  while (!Serial) {
+    ;  // wait for USB on Nano Every
+  }
+
+  Serial.println(F("SOLARSAFE fan + dual DHT11"));
+  Serial.println(F("Keys: 0 OFF  1 LOW  2 MED  3 HIGH  4 MAX  +/- step  ? help"));
+  fanSetPercent(0);
+}
+
+void loop() {
+  handleSerialCommand();
+
+  printSensor("INLET ", PIN_DHT_INLET);
+  delay(250);  // small gap between reads on different pins
+  printSensor("OUTLET", PIN_DHT_OUTLET);
+
+  Serial.print(F("FAN "));
+  Serial.print(fanPercent);
+  Serial.println(F("%"));
+  Serial.println(F("---"));
+
+  // DHT11: max ~1 Hz per device; 2 s keeps readings stable
+  delay(2000);
+}
