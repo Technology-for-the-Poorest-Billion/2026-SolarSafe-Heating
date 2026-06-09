@@ -109,7 +109,7 @@ void handleSerialCommand() {
     case '1': fanSetPercent(25);  Serial.println(F("# Fan LOW 25%")); break;
     case '2': fanSetPercent(50);  Serial.println(F("# Fan MED 50%")); break;
     case '3': fanSetPercent(75);  Serial.println(F("# Fan HIGH 75%")); break;
-    case '4': fanSetPercent(85);  Serial.println(F("# Fan MAX 85%")); break;
+    case '4': fanSetPercent(100);  Serial.println(F("# Fan MAX 100%")); break;
     case '+':
       fanSetPercent(constrain(fanPercent + 10, 0, 100));
       Serial.print(F("# Fan "));
@@ -149,7 +149,7 @@ void setup() {
 
   Serial.println(F("# SOLARSAFE CSV logger started"));
   Serial.println(F("# Keys: 0 OFF  1 LOW  2 MED  3 HIGH  4 MAX  +/- step  ? help"));
-  fanSetPercent(2);
+  fanSetPercent(75);
 }
 
 void loop() {
