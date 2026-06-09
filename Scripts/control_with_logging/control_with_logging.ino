@@ -149,7 +149,7 @@ void setup() {
 
   Serial.println(F("# SOLARSAFE CSV logger started"));
   Serial.println(F("# Keys: 0 OFF  1 LOW  2 MED  3 HIGH  4 MAX  +/- step  ? help"));
-  fanSetPercent(0);
+  fanSetPercent(2);
 }
 
 void loop() {
