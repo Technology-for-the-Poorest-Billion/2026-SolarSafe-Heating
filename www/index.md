@@ -4,7 +4,7 @@ title: Welcome
 
 ## Navigate to other pages
 
-- [Mechanical Design Report](Mech-Design_James'-Report.md)
+- [Mechanical Design Report](Mech_Design-James'_Report.md)
 
 ## Introduction
 
