@@ -6,6 +6,8 @@ title: Welcome
 
 - [Mechanical Design Report](Mech_Design-James'_Report.md)
 
+- [Sustainable Development Goals and Priciples for Digital Development](sustainable_dev_goals.md) 
+
 ## Introduction
 
 In Kenya, and other Sub-Saharan countries, the maize harvest is often blighted by aflatoxin contracted from a fungus that resides in the soil and grows upon the grains if left unchecked.
