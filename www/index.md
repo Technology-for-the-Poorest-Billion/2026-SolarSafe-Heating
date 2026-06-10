@@ -2,6 +2,10 @@
 title: Welcome
 ---
 
+## Navigate to other pages
+
+- [Mechanical Design Report](Mech-Design_James'-Report.md)
+
 ## Introduction
 
 In Kenya, and other Sub-Saharan countries, the maize harvest is often blighted by aflatoxin contracted from a fungus that resides in the soil and grows upon the grains if left unchecked.
