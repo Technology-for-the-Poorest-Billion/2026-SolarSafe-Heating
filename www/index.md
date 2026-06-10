@@ -4,7 +4,8 @@ title: Welcome
 
 ## Navigate to other pages
 
-- [Mechanical Design Report](Mech_Design-James'_Report.md)
+- [Mechanical Design Report](Mech_Design-James'_Report.md) - Author: James Edwicker
+- [Experimental Testing Data Analyses and Evaluation Report](josh_tuckwell_report_data.md) - Author: Josh Tuckwell
 
 - [Sustainable Development Goals and Priciples for Digital Development](sustainable_dev_goals.md) 
 
