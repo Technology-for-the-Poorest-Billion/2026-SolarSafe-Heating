@@ -49,6 +49,22 @@ The plan was to use two T junction pipes to provide the space to insert the Pelt
 The Peltiers are flat, so a transition to 110mm x 54mm rectangular uPVC tubing was made in order to provide a flat surface onto which the Peltiers can be mounted, requiring a square slot to be cut through the inlet and return pipes.
 This did require the addition of rectangle to circle adapter for incorperating the round blower duct, but the flat surfaces afforded by the rectangular pipes proved to be very beneficial for ease of construction and effective running of the device.
 
+### Initial Duct Concept
+
+![Initial Duct Concept](Images/Duct_Diagram_Old.png)
+
+### Initial Heat Sink Concept
+
+![Initial Heat Sink Concept](Images/Heat_Sink_Diagram_Old.png)
+
+### New Duct Concept
+
+![New Duct Concept](Images/Duct_Diagram_New.png)
+
+### New Heat Sink Concept
+
+![New Heat Sink Concept](Images/Heat_Sink_Diagram_New.png)
+
 ## Construction and Refinement
 
 We experienced some difficulties purchasing the components that we wanted to use since some of them could only be found from suppliers not supported by the university's systems, but eventually all of the components we wanted arrived through the help of those in the Dyson Centre and some personal purchases.
@@ -59,6 +75,10 @@ This was corrected by cutting each bend with a band saw and filing them down to 
 The second issue was partially solved by using slots in the pipework that were only just larger than the Peltiers to hold them in place.
 An option to secure the Peltiers with zip ties was suggested, but some tape worked for our first test.
 
+### Open Loop Construction
+
+![Open Loop Construction](Images/Constructed_Open_Loop.jpg)
+
 ## Iteration
 
 In our first test, the device's proof-of-concept was successful, providing a small amount of temperature increase and humidity decrease with the limited power supply at the time, but we noticed that the heat sinks appeared to be relatively ineffective as they had a significant temperature difference to the air, but very little of the air seemed to be exchanging heat with them.
@@ -68,8 +88,20 @@ A redesign was in order to ensure the security of the heat sinks.
 Since we had not observed the heat sinks reaching temperatures that would risk damage to the plastic of a ziptie, zipties were wrapped around the heat sinks and Peltiers to ensure there is always a clamping force holding the heat sinks in place.
 After this, the machine worked well mechanically.
 
+### Old Heat Sinks
+
+![Old Heat Sinks](Images/Old_Heat_Sinks.jpg)
+
+### New Heat Sinks
+
+![New Heat Sinks](Images/New_Heat_Sinks.jpg)
+
 For the experiments, a couple of nets were mounted to the inlet and outlet, preventing anything large from being sucked into the inlet, or anyone from putting their hand into the outlet and receiving a burn from the heating element near the outlet.
 The final change the device underwent was the addition of a flexible plastic tube connecting the outlet to the inlet for a closed-loop test.
 This was relatively adhoc, using tape to secure the tube to the outlet first, then using the blower to keep the tube inflated while it was brought around and secured to the inlet using more tape.
 This modification appeared to work well for our closed-loop experiments, but it was important to monitor the tube as any nudging or manipulation could lead to the flow through the tube becoming choked and the tube collapsing.
 A closed-loop system would probably be beneficial for the final SOLARSAFE design, but attention would need to be paid to this issue of choked flow collapsing the bag, perhaps demanding some ribs around the tube to avoid choking form occurring.
+
+### Closed Loop Construction
+
+![Closed Loop Construction](Images/Construted_Closed_Loop.jpg)
