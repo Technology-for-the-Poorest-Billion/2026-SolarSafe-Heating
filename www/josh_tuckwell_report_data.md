@@ -84,18 +84,18 @@ duties: 50%, 75%, and 100%. Two additional closed-loop validation tests were app
 Ambient baseline conditions remained stable throughout the open-loop testing phase, recorded at an average temperature of 20°C and a relative humidity (RH) of 44%. The initial data set maps the absolute change
 in relative humidity ($\Delta\text{RH}$) between the intake sensor (measuring ambient air) and the exhaust sensor at the dehumidifier outlet. 
 
-<img src="Images/temperature_results.png" width="480" alt="Temperature Increase measured in Tests 1-9">
+<img src="Images/temperature_results.png" width="720" alt="Temperature Increase measured in Tests 1-9">
 
-<img src="Images/humidity_results.png" width="480" alt="Humidity decrease measured in Tests 1-9">
+<img src="Images/humidity_results.png" width="720" alt="Humidity decrease measured in Tests 1-9">
 
 
 While raw humidity reduction provides a useful baseline index, it fails to account for the varying electrical loads demanded by each component configuration. To establish a true measure of efficiency, 
 the raw data was normalised against power consumption. By plotting temperature lift ($\Delta T/\text{Watt}$) and moisture extraction ($\Delta\text{RH}/\text{Watt}$), the system's specific energy performance 
 can be critically analysed.
 
-<img src="Images/temperature_pwresults.png" width="480" alt="Temperature Increase measured in Tests 1-9 per Watt of Power">
+<img src="Images/temperature_pwresults.png" width="720" alt="Temperature Increase measured in Tests 1-9 per Watt of Power">
 
-<img src="Images/humidity_pwresults.png" width="480" alt="Humidity decrease measured in Tests 1-9 per Watt of Power">
+<img src="Images/humidity_pwresults.png" width="720" alt="Humidity decrease measured in Tests 1-9 per Watt of Power">
 
 A notable trend emerged during the 50% fan duty trials, which consistently demonstrated the highest localised performance. This aligns with fundamental thermodynamic principles: 
 a lower volumetric flow rate increases the residence time of the air stream across the active elements, allowing a fixed thermal input to heat a smaller mass of air to a higher peak temperature. 
@@ -106,7 +106,7 @@ operating at identical fan duties.
 Because crop-drying velocity depends heavily on both elevated sensible heat and suppressed relative humidity, these variables are of equal statistical importance to the performance of the SolarSafe unit. 
 To synthesize these competing vectors into a singular evaluative tool, a comprehensive performance metric was developed to combine thermal lift and dehumidification capacity.
 
-<img src="Images/Combined_Performance_Graph.png" width="480" alt="Performance Index Results">
+<img src="Images/Combined_Performance_Graph.png" width="720" alt="Performance Index Results">
 
 Cross-comparing configurations at matching fan duties reveals a distinct operational advantage when deploying the Peltier modules and resistance heaters in tandem. This hybrid configuration out-performed 
 individual component operation across two out of three fan duties. Crucially, the combined setup provides balanced optimisation — delivering simultaneous thermal lift and moisture removal rather than prioritising 
