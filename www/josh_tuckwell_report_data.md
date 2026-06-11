@@ -83,8 +83,10 @@ Before each test the system was left to reach ambient conditions where the inlet
 
 ## Open-Loop Test Results (Tests 1-9)
 
+<img src="Images/Constructed_Open_Loop.jpg" width="720" alt="Open-Loop prototype configuration">
+
 Ambient baseline conditions remained stable throughout the open-loop testing phase, recorded at an average temperature of 20°C and a relative humidity (RH) of 44%. The initial data set maps the absolute change
-in relative humidity ($\Delta\text{RH}$) between the intake sensor (measuring ambient air) and the exhaust sensor at the dehumidifier outlet. 
+in relative humidity ($\Delta\text{RH}$) between the intake sensor (measuring ambient air) and the exhaust sensor at the dehumidifier outlet.
 
 <img src="Images/temperature_results.png" width="720" alt="Temperature Increase measured in Tests 1-9">
 
@@ -118,6 +120,8 @@ This characteristic introduces vital thermodynamic versatility to the SolarSafe 
 boundaries are already elevated, this dual-action module maintains robust performance profiles across a wider spectrum of localised climatic conditions.
 
 ## Closed-Loop Test Results (Tests 10-11)
+
+<img src="Images/Construted_Closed_Loop.jpg" width="720" alt="Closed-Loop prototype configuration">
 
 In open-loop configurations, introducing heat incurs a significant energy premium because thermal energy is continuously exhausted into the environment. Transitioning the system to a closed-loop architecture allows for maximum thermal energy retention within the drying chamber, compounding the temperature lift over time and continually driving down the relative humidity.
 
