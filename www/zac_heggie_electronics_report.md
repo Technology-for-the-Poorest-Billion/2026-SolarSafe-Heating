@@ -17,6 +17,8 @@ The prototype is coordinated by an Arduino Nano Every microcontroller. It comman
 
 The blower runs from a 12V rail, deliberately matching the existing SOLARSAFE installation in Kenya, which charges a 12V car battery from a 150W solar panel. The fan draws roughly 2A at full duty, so wiring and fusing were sized accordingly. The BTS7960 module isolates its 5V logic side from the motor rail via an on-board 74HC244 buffer, protecting the microcontroller, and all supplies share a common ground referenced at the driver so that motor return current never flows through the Arduino. The resistive heater was run at 24V because the bench supplies were current-limited; raising the voltage allowed the required heating power to be reached within that current limit.
 
+The Peltier devices that we sourced were slightly sensitive, combined with the bovine power supplies, led to two device failures. This was due to operation close to the power supply maximum current, causing it to switch out of constant voltage mode, then over-volting the devices. Luckily our team had planned for this eventuality and it was resolved quickly without hindering progress.
+
 We had some challenges finding power supplies for this project, this tested our teamwork and communication as we were working with many different technicians with differing opinions. James prepared an updated risk assessment for the new power requirement and in case we needed to use a 12V car battery. Josh liaised with the Dyson Centre technicians and I worked with the EIETL to find potential solutions on-site. Ultimately, between the three of us, the power supplies were found and implemented to the satisfaction of the EIETL and Dyson Centre technicians.
 
 ## Fan Speed Control

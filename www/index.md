@@ -9,6 +9,7 @@ title: Welcome
 - [Electronics Design Report](zac_heggie_electronics_report.md) - Author: Zac Heggie
 
 - [Sustainable Development Goals and Priciples for Digital Development](sustainable_dev_goals.md) 
+- [Project Management and Teamwork Statement](teamwork_and_collaboration.md)
 
 ## Introduction
 
