@@ -32,3 +32,6 @@ The DHT11s are orientation sensitive as they required flow over the sensor for s
 ## Reflection and Future Work
 
 The electronics proved reliable across all open and closed-loop tests. The natural next step is to implement volumetric flowrate measurement to give a more informed performance index. The following step is to optimise for full cycle power consumption, potentially with a high-power priming phase followed by a low-power maintenance phase that modulates the heater and Peltier power split to suit ambient conditions. Testing the system in an environmental chamber would signifincatly improve data validity by emulating the ambient conditions in various parts of sub-saharan Africa.
+
+
+<img src="Images/electronics_diagram.png" width="720" alt="Electronics Diagram">
