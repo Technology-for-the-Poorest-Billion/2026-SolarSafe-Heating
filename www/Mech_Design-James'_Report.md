@@ -1,7 +1,10 @@
 ---
 title: Mechanical Design 
 ---
-### James Edwicker's Individual Report
+
+**Author:** James Edwicker
+
+This report details the mechanical developement for the SolarSafe dehumidifier prototype: the design process, the selection of fan and heating devices, and the modifications made after physical testing.
 
 ## Prototyping
 
