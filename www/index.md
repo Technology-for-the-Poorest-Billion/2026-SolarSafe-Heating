@@ -4,7 +4,7 @@ title: Welcome
 
 ## Navigate to other pages
 
-- [Final Presentation](https://drive.google.com/file/d/1UeUfmxdzWcHzArEj_7oSDLqGP4n1Xbd2/view?usp=sharing)
+- [Final Presentation](https://drive.google.com/uc?export=download&id=1UeUfmxdzWcHzArEj_7oSDLqGP4n1Xbd2)
 
 - [Mechanical Design Report](james_edwicker_mechanical_report.md) - Author: James Edwicker
 - [Experimental Testing Data Analyses and Evaluation Report](josh_tuckwell_report_data.md) - Author: Josh Tuckwell
