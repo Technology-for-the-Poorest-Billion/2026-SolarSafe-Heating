@@ -14,7 +14,7 @@ title: Welcome
 ## Introduction
 
 In Kenya, and other Sub-Saharan countries, the maize harvest is often blighted by aflatoxin contracted from a fungus that resides in the soil and grows upon the grains if left unchecked.
-This poses significant health and financial issues upon the subsitance an co-operative farmers who rely on the maize harvest for their lives and livelihoods.
+This poses significant health and financial issues upon the subsitance and co-operative farmers who rely on the maize harvest for their lives and livelihoods.
 The traditional methods of drying the grain are not satisfactory for protecting the grains from the toxin and they do not meet the requirements set out by global health organisations, so this leaves the maize as potentially harmful to consume and low-value if sold.
 A method of increasing the speed and effectiveness of the drying process, while also avoiding contact with contaminated soil, would greatly improve the quality and safety of the maize.
 
@@ -39,14 +39,15 @@ Our hope was that the Peltiers would be unlikely to fail if operated correctly, 
 
 ## Our Results
 
-Once constructed, we ran our device through a suite of different combintations of load to compare the relative drying power of each configuration.
-In open loop, running with both the Peltiers and the heater on with the fan at 50% power produced the greatest drop in relative humidity per Watt consumed, with 50% fan with Peltier or heater following closely behind.
+Once constructed, we ran our device through a suite of different load combinations to compare the relative drying power of each configuration.
+In an open loop, running with both the Peltiers and the heater on and the fan at 50% power produced the greatest drop in relative humidity per Watt consumed, with 50% fan with Peltier or heater following closely behind.
 It was a similar story with temperature rise per Watt as this too was dominated by the group of tests running at 50% fan speed.
 This implies that the best means of using power to add heat is irrespective of the heating elements used so long as the blower is running at as little power as possible.
 
 We also ran with a closed loop to investigate whether this would work.
 While keeping the return well inflated was temperamental, this provided a very large decrease in relative humidity and increase in temperature within the system (17% humidity down from 41% and 36 degrees Celsius up from 21).
 This is the most promising portion of our experimentation, so it is our recommendation that some form of reheat system be employed to reach more optimal drying conditions.
+See Josh's report on the results for more details.
 
 The Peltier aspect to our design did not seem to function as well as we had hoped.
 At no point did we observe any condensation, so stacking Peltiers would be required for this effect.
